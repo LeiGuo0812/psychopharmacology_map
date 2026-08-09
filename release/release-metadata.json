@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "release_id": "kb-2026-08-09-bilingual-semantic-distributions-v1",
+  "author": "Lei Guo",
+  "artifact": {
+    "path": "release/psychopharmacology-map-offline.html",
+    "media_type": "text/html",
+    "size_bytes": 6001407,
+    "sha256": "524ad1097acd364aeaaaa24bc3eab2418cf93e841750d4b388efc5942b5cbaee"
+  },
+  "knowledge_base": {
+    "schema_version": "1.4",
+    "generated_at": "2026-08-09T12:33:58+00:00",
+    "source_snapshot_date": "2026-08-09",
+    "counts": {
+      "concepts": 914,
+      "assertions": 3194,
+      "public_sources": 103,
+      "paths": 976,
+      "label_documents": 94,
+      "bioactivities": 3956,
+      "public_target_distributions": 351,
+      "target_distribution_semantic_links": 65
+    }
+  },
+  "release_status": {
+    "status": "draft_medical_review_required",
+    "medical_signoff": false,
+    "public_release_allowed": false,
+    "publication_blocker": "Independent medical review and second review of high-risk clinical content are not yet signed off.",
+    "disclaimer_zh": "仅用于精神药理学教育与知识学习，不构成诊断、处方或个体化医疗建议。"
+  },
+  "verification": {
+    "standalone_verifier_passed": true,
+    "candidate_release_id_verified": true,
+    "expected_public_counts_verified": true,
+    "internal_source_ids_absent": true,
+    "internal_file_paths_absent": true,
+    "internal_page_markers_absent": true,
+    "copied_artifact_is_byte_identical": true,
+    "knowledge_validator": {
+      "status": "passed",
+      "error_count": 0,
+      "warning_count": 1,
+      "expected_warning_code": "publication-blocked"
+    },
+    "data_tests": {
+      "status": "passed",
+      "passed": 25,
+      "total": 25
+    },
+    "browser_tests": {
+      "status": "passed",
+      "browser": "Chrome/151.0.7922.76"
+    },
+    "lint": "passed",
+    "typescript_no_emit": "passed"
+  },
+  "freeze_policy": {
+    "frozen_release_overwritten": false,
+    "frozen_release": {
+      "path": "release/psychopharmacology-map-offline.html",
+      "size_bytes": 5096279,
+      "sha256": "c83411a8e70121a5af7d75b8e08a7721818dcf2761c9db7b66988d1455b5ef09"
+    },
+    "canonical_review_data_included": false
+  },
+  "packaging": {
+    "generator": "scripts/package-github-release.mjs",
+    "source_candidate": "release-candidates/kb-2026-08-09-bilingual-semantic-distributions-v1/psychopharmacology-map-offline.html",
+    "deterministic_for_identical_inputs": true
+  },
+  "project_license": null,
+  "project_license_notice": "This distribution does not include an open-source license for the project."
+}
