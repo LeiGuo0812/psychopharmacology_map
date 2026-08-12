@@ -8,17 +8,18 @@
 
 ## 离线使用
 
-从 [GitHub Release](https://github.com/LeiGuo0812/psychopharmacology_map/releases/tag/v1.5) 下载 `psychopharmacology-map-offline.html`，用电脑或 Android 的现代浏览器打开。运行时不需要安装程序、启动服务器或连接网络。仓库中的 [`release/psychopharmacology-map-offline.html`](release/psychopharmacology-map-offline.html) 是同一文件。
+从 [GitHub Release](https://github.com/LeiGuo0812/psychopharmacology_map/releases/tag/v1.6) 下载 `psychopharmacology-map-offline.html`，用电脑或 Android 的现代浏览器打开。运行时不需要安装程序、启动服务器或连接网络。仓库中的 [`release/psychopharmacology-map-offline.html`](release/psychopharmacology-map-offline.html) 是同一文件。
 
 ## 本次数据
 
-- 版本：`kb-2026-08-12-expanded-drugs-inference-v1`
-- 知识 Schema：`1.5`
+- 版本：`kb-2026-08-12-single-ingredient-drugs-v1`
+- 知识 Schema：`1.6`
 - 数据快照：`2026-08-12`
-- 概念：1171
-- 关系断言：4055
-- 互动路径：1215
-- 公开来源目录项：153
+- 单一活性药物实体：160
+- 概念：1158
+- 关系断言：3908
+- 互动路径：1138
+- 公开来源目录项：150
 - 公开靶点分布记录：423
 - 定量亲和力/效价记录：4576
 
@@ -30,8 +31,8 @@
 
 ## 文件完整性
 
-- 文件大小：8121632 bytes（7.75 MiB）
-- SHA-256：`272ad1c9c2769f281f7b74b48a9946444a9cd6bc79cc9623945094d87e404e88`
+- 文件大小：7857472 bytes（7.49 MiB）
+- SHA-256：`5c485a2618cd2825a4dcc7c17aabbf7df994f4e8b7af0c26789349edbb93963f`
 
 可使用 `SHA256SUMS.txt` 核对分发包内文件。Linux/macOS 可在仓库根目录运行：
 

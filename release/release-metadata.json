@@ -1,23 +1,24 @@
 {
   "schema_version": "1.0",
-  "release_id": "kb-2026-08-12-expanded-drugs-inference-v1",
+  "release_id": "kb-2026-08-12-single-ingredient-drugs-v1",
   "author": "Lei Guo",
   "artifact": {
     "path": "release/psychopharmacology-map-offline.html",
     "media_type": "text/html",
-    "size_bytes": 8121632,
-    "sha256": "272ad1c9c2769f281f7b74b48a9946444a9cd6bc79cc9623945094d87e404e88"
+    "size_bytes": 7857472,
+    "sha256": "5c485a2618cd2825a4dcc7c17aabbf7df994f4e8b7af0c26789349edbb93963f"
   },
   "knowledge_base": {
-    "schema_version": "1.5",
-    "generated_at": "2026-08-12T01:09:01+00:00",
+    "schema_version": "1.6",
+    "generated_at": "2026-08-12T14:17:17+00:00",
     "source_snapshot_date": "2026-08-12",
     "counts": {
-      "concepts": 1171,
-      "assertions": 4055,
-      "public_sources": 153,
-      "paths": 1215,
-      "label_documents": 138,
+      "concepts": 1158,
+      "assertions": 3908,
+      "drugs": 160,
+      "public_sources": 150,
+      "paths": 1138,
+      "label_documents": 135,
       "bioactivities": 4576,
       "public_target_distributions": 423,
       "target_distribution_semantic_links": 68
@@ -57,17 +58,18 @@
     "typescript_no_emit": "passed"
   },
   "freeze_policy": {
-    "frozen_release_overwritten": false,
-    "frozen_release": {
+    "release_artifact_matches_candidate": true,
+    "release_artifact_unchanged_during_packaging": true,
+    "release_artifact": {
       "path": "release/psychopharmacology-map-offline.html",
-      "size_bytes": 8121632,
-      "sha256": "272ad1c9c2769f281f7b74b48a9946444a9cd6bc79cc9623945094d87e404e88"
+      "size_bytes": 7857472,
+      "sha256": "5c485a2618cd2825a4dcc7c17aabbf7df994f4e8b7af0c26789349edbb93963f"
     },
     "canonical_review_data_included": false
   },
   "packaging": {
     "generator": "scripts/package-github-release.mjs",
-    "source_candidate": "release-candidates/kb-2026-08-12-expanded-drugs-inference-v1/psychopharmacology-map-offline.html",
+    "source_candidate": "release-candidates/kb-2026-08-12-single-ingredient-drugs-v1/psychopharmacology-map-offline.html",
     "deterministic_for_identical_inputs": true
   },
   "project_license": null,
