@@ -8,15 +8,15 @@
 
 ## 本次数据
 
-- 版本：`kb-2026-08-09-bilingual-semantic-distributions-v1`
-- 知识 Schema：`1.4`
-- 数据快照：`2026-08-09`
-- 概念：914
-- 关系断言：3194
-- 互动路径：976
-- 公开来源目录项：103
-- 公开靶点分布记录：351
-- 定量亲和力/效价记录：3956
+- 版本：`kb-2026-08-12-expanded-drugs-inference-v1`
+- 知识 Schema：`1.5`
+- 数据快照：`2026-08-12`
+- 概念：1171
+- 关系断言：4055
+- 互动路径：1215
+- 公开来源目录项：153
+- 公开靶点分布记录：423
+- 定量亲和力/效价记录：4576
 
 数据来源与计数口径见 [DATA_SOURCES.md](DATA_SOURCES.md)，本版变化见 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
 
@@ -26,8 +26,8 @@
 
 ## 文件完整性
 
-- 文件大小：6001407 bytes（5.72 MiB）
-- SHA-256：`524ad1097acd364aeaaaa24bc3eab2418cf93e841750d4b388efc5942b5cbaee`
+- 文件大小：8121632 bytes（7.75 MiB）
+- SHA-256：`272ad1c9c2769f281f7b74b48a9946444a9cd6bc79cc9623945094d87e404e88`
 
 可使用 `SHA256SUMS.txt` 核对分发包内文件。Linux/macOS 可在仓库根目录运行：
 
