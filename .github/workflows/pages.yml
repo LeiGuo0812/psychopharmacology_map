@@ -1,0 +1,71 @@
+name: Deploy single-file app to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - release/psychopharmacology-map-offline.html
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    name: Prepare single-file site
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out the public release repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Prepare the Pages artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_file="release/psychopharmacology-map-offline.html"
+          site_dir="_site"
+          test -s "$source_file"
+          test ! -L "$source_file"
+          test ! -e "$site_dir"
+          mkdir "$site_dir"
+          install -m 0644 "$source_file" "$site_dir/index.html"
+          cmp -s "$source_file" "$site_dir/index.html"
+          test "$(find "$site_dir" -mindepth 1 -maxdepth 1 -type f | wc -l)" -eq 1
+          test -z "$(find "$site_dir" -mindepth 1 ! -type f -print -quit)"
+          sha256sum "$site_dir/index.html"
+
+      - name: Upload the Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy Pages artifact
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

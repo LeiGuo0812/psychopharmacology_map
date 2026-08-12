@@ -1,10 +1,14 @@
 # 精神药理学习地图
 
-这是可直接离线打开的精神药理学互动路径与知识库单文件版本。
+这是可直接在线使用或离线打开的精神药理学互动路径与知识库单文件版本。
 
-## 使用方法
+## 在线使用
 
-下载 [`release/psychopharmacology-map-offline.html`](release/psychopharmacology-map-offline.html)，用电脑或 Android 的现代浏览器打开。运行时不需要安装程序、启动服务器或连接网络。
+[直接打开精神药理学习地图](https://leiguo0812.github.io/psychopharmacology_map/)
+
+## 离线使用
+
+从 [GitHub Release](https://github.com/LeiGuo0812/psychopharmacology_map/releases/tag/v1.5) 下载 `psychopharmacology-map-offline.html`，用电脑或 Android 的现代浏览器打开。运行时不需要安装程序、启动服务器或连接网络。仓库中的 [`release/psychopharmacology-map-offline.html`](release/psychopharmacology-map-offline.html) 是同一文件。
 
 ## 本次数据
 

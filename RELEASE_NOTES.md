@@ -6,6 +6,12 @@
 
 数据快照日期：`2026-08-12`
 
+在线使用：https://leiguo0812.github.io/psychopharmacology_map/
+
+离线文件：`psychopharmacology-map-offline.html`
+
+SHA-256：`272ad1c9c2769f281f7b74b48a9946444a9cd6bc79cc9623945094d87e404e88`
+
 ### 本版内容
 
 - 将药物范围扩展至 167 种，补入地达西尼及一批常用药、新药、固定复方和生物制剂。
