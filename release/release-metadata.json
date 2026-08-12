@@ -5,20 +5,20 @@
   "artifact": {
     "path": "release/psychopharmacology-map-offline.html",
     "media_type": "text/html",
-    "size_bytes": 7857472,
-    "sha256": "5c485a2618cd2825a4dcc7c17aabbf7df994f4e8b7af0c26789349edbb93963f"
+    "size_bytes": 7828052,
+    "sha256": "88ac8e86a94a98d12723a9e9604c7f49221496d9d2c1029ea8ed599687151c74"
   },
   "knowledge_base": {
     "schema_version": "1.6",
-    "generated_at": "2026-08-12T14:17:17+00:00",
+    "generated_at": "2026-08-12T16:01:19+00:00",
     "source_snapshot_date": "2026-08-12",
     "counts": {
-      "concepts": 1158,
-      "assertions": 3908,
+      "concepts": 1159,
+      "assertions": 3897,
       "drugs": 160,
-      "public_sources": 150,
+      "public_sources": 151,
       "paths": 1138,
-      "label_documents": 135,
+      "label_documents": 134,
       "bioactivities": 4576,
       "public_target_distributions": 423,
       "target_distribution_semantic_links": 68
@@ -47,8 +47,8 @@
     },
     "data_tests": {
       "status": "passed",
-      "passed": 29,
-      "total": 29
+      "passed": 31,
+      "total": 31
     },
     "browser_tests": {
       "status": "passed",
@@ -62,8 +62,8 @@
     "release_artifact_unchanged_during_packaging": true,
     "release_artifact": {
       "path": "release/psychopharmacology-map-offline.html",
-      "size_bytes": 7857472,
-      "sha256": "5c485a2618cd2825a4dcc7c17aabbf7df994f4e8b7af0c26789349edbb93963f"
+      "size_bytes": 7828052,
+      "sha256": "88ac8e86a94a98d12723a9e9604c7f49221496d9d2c1029ea8ed599687151c74"
     },
     "canonical_review_data_included": false
   },
