@@ -1,16 +1,19 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "distribution_id": "app-2026-08-24-browser-compat-v1",
+  "software_version": "1.7.0",
+  "release_tag": "v1.7",
   "release_id": "kb-2026-08-12-single-ingredient-drugs-v1",
   "author": "Lei Guo",
   "artifact": {
     "path": "release/psychopharmacology-map-offline.html",
     "media_type": "text/html",
-    "size_bytes": 7828052,
-    "sha256": "88ac8e86a94a98d12723a9e9604c7f49221496d9d2c1029ea8ed599687151c74"
+    "size_bytes": 7830643,
+    "sha256": "51999e0bef10d73200f452907f75aa753dbccfd65127849733a1e95ecd94cc61"
   },
   "knowledge_base": {
     "schema_version": "1.6",
-    "generated_at": "2026-08-12T16:01:19+00:00",
+    "generated_at": "2026-08-23T16:22:01+00:00",
     "source_snapshot_date": "2026-08-12",
     "counts": {
       "concepts": 1159,
@@ -47,12 +50,33 @@
     },
     "data_tests": {
       "status": "passed",
-      "passed": 31,
-      "total": 31
+      "passed": 35,
+      "total": 35
     },
     "browser_tests": {
       "status": "passed",
-      "browser": "Chrome/151.0.7922.76"
+      "browser": "Chrome/151.0.7922.170",
+      "legacy_browser": "HeadlessChrome/64.0.3282.0",
+      "support_target": "Chrome 64+ / Microsoft Edge 79+",
+      "compatibility_probes": {
+        "file_protocol": true,
+        "desktop_graph": true,
+        "responsive_layouts": true,
+        "missing_resize_observer_fallback": true,
+        "missing_modern_builtins_fallback": true
+      },
+      "legacy_browser_tests": {
+        "file_protocol": true,
+        "application_boot": true,
+        "desktop_graph": true,
+        "nonzero_viewport": true,
+        "visible_canvas": true,
+        "nodes_and_flows": true,
+        "interaction": true,
+        "console_clean": true,
+        "mobile_cards": true,
+        "missing_resize_observer_fallback": true
+      }
     },
     "lint": "passed",
     "typescript_no_emit": "passed"
@@ -62,14 +86,14 @@
     "release_artifact_unchanged_during_packaging": true,
     "release_artifact": {
       "path": "release/psychopharmacology-map-offline.html",
-      "size_bytes": 7828052,
-      "sha256": "88ac8e86a94a98d12723a9e9604c7f49221496d9d2c1029ea8ed599687151c74"
+      "size_bytes": 7830643,
+      "sha256": "51999e0bef10d73200f452907f75aa753dbccfd65127849733a1e95ecd94cc61"
     },
     "canonical_review_data_included": false
   },
   "packaging": {
     "generator": "scripts/package-github-release.mjs",
-    "source_candidate": "release-candidates/kb-2026-08-12-single-ingredient-drugs-v1/psychopharmacology-map-offline.html",
+    "source_candidate": "release-candidates/app-2026-08-24-browser-compat-v1/psychopharmacology-map-offline.html",
     "deterministic_for_identical_inputs": true
   },
   "project_license": null,
